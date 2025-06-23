@@ -1,18 +1,18 @@
-#🛌 Sleep Health Predictor 🧠
+# 🛌 Sleep Health Predictor 🧠
 
-#🔍 Overview
+## 🔍 Overview
 This project builds a machine learning model to predict sleep disorders (Insomnia, Sleep Apnea, or None) based on a person's health and lifestyle metrics like sleep duration, physical activity, stress level, and more.
 
 It is aimed at exploring how behavioral and physiological data can help assess sleep health — a key factor in overall well-being.
 
-#📂 Dataset
+## 📂 Dataset
 Source: Kaggle - Sleep Health and Lifestyle Dataset
 
 Size: 374 records, 13 columns
 
 Target Variable: Sleep Disorder (None, Insomnia, Sleep Apnea)
 
-#🧹 Features Used
+## 🧹 Features Used
 Feature	Type
 Age	Numerical
 Gender	Categorical
@@ -26,7 +26,7 @@ Blood Pressure	Categorical
 Heart Rate	Numerical
 Daily Steps	Numerical
 
-#🧠 Model Workflow
+## 🧠 Model Workflow
 Data Cleaning:
 
 Dropped irrelevant columns (e.g., Person ID)
@@ -57,7 +57,7 @@ Accuracy: 86%
 
 F1-Score (weighted): 0.86
 
-#📈 Model Performance
+## 📈 Model Performance
 Metric	Score
 Accuracy	86%
 Precision	87% (weighted)
@@ -66,7 +66,7 @@ F1-Score	86% (weighted)
 
 Class 2 (None) had the highest F1-score, while Class 1 (Insomnia) had lower recall — highlighting potential for further improvement.
 
-#🧪 Tech Stack
+## 🧪 Tech Stack
 Python (Pandas, NumPy)
 
 Scikit-learn
@@ -75,7 +75,7 @@ Seaborn & Matplotlib
 
 Jupyter Notebook
 
-#💡 Future Improvements
+## 💡 Future Improvements
 Try other models like XGBoost or LightGBM
 
 Improve recall for Insomnia class with SMOTE or class weighting
