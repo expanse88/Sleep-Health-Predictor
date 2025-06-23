@@ -31,11 +31,10 @@ sns.countplot(x='Sleep Disorder', data=df)
 plt.title('Class Distribution: Sleep Disorder')
 plt.show()
 
-plt.figure(figsize=(14,8))
-sns.heatmap(df.corr(),annot=True,cmap='Blues')
-plt.title("Correlation Heatmap")
+plt.figure(figsize=(12, 6))
+sns.heatmap(df.select_dtypes(include='number').corr(), annot=True, cmap='Blues')
+plt.title("Correlation Heatmap (Numeric Features Only)")
 plt.show()
-
 
 sns.boxplot(x='Sleep Disorder', y='Stress Level',data=df)
 plt.title('Stress Level vs Sleep Disorder')
